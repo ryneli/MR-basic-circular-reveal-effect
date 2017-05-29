@@ -16,6 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleTextAppearance="@style/ExpandedAppBar"
+            app:collapsedTitleTextAppearance="@style/CollapsedAppBar"
             app:title="circular reveal and scroll event">
             <!-- drawing icons -->
             <android.support.v7.widget.Toolbar
@@ -28,6 +30,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <!-- android:nestedScrollingEnabled="false" will disable scroll event for the tool bar -->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_content"
         android:layout_width="match_parent"
